@@ -52,8 +52,8 @@ function createFeatures(earthquakeData) {
 }
 
 function  chooseColor(depth) {
-  if (depth > 90) return "#FF4500"; 
-  else if (depth > 70) return "##35BC00"; 
+  if (depth > 90) return "#B22222"; 
+  else if (depth > 70) return "#DC1143C"; 
   else if (depth > 50) return "#BCBC00";
   else if (depth > 30) return "#FFFF00"; 
   else if (depth > 10) return "#006400"; 
@@ -102,8 +102,8 @@ function createMap(earthquakes) {
    div.innerHTML += '<i style="background: #006400""></i><span>: 10 - 30</span><br>';
    div.innerHTML += '<i style="background: #FFFF00"></i><span>: 30 - 50</span><br>';
    div.innerHTML += '<i style="background: #BCBC00"></i><span>: 50 - 70</span><br>';
-   div.innerHTML += '<i style="background: #35BC00"></i><span>: 70 - 90</span><br>';
-   div.innerHTML += '<i style="background: #FF4500"></i><span>: 90+ </span><br>';
+   div.innerHTML += '<i style="background: #DC1143C"></i><span>: 70 - 90</span><br>';
+   div.innerHTML += '<i style="background: #B22222"></i><span>: 90+ </span><br>';
 
    return div;
  };
